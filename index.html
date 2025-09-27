@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors - Fullscreen VS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Game Screen -->
+    <div id="game-screen">
+        <div class="player" id="player-box">
+            <div class="gesture" id="player-gesture"></div>
+            <div class="choice-buttons">
+                <button onclick="playRound('rock')">✊</button>
+                <button onclick="playRound('paper')">✋</button>
+                <button onclick="playRound('scissors')">✌</button>
+            </div>
+        </div>
+
+        <div class="player" id="computer-box">
+            <div class="gesture" id="computer-gesture"></div>
+        </div>
+    </div>
+
+    <!-- Game Over Screen -->
+    <div id="game-over-screen" class="hidden">
+        <h1> Game Over </h1>
+        <p id="final-score"></p>
+        <button onclick="restartGame()">Play Again</button>
+    </div>
+
+    <div id="glitter-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
